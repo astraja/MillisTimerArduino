@@ -5,22 +5,22 @@
 
 class MillisTimer {
 public:
-  //! Tworzy obiekt Astratimer
+  //! Create MillisTimer object
   //! @param countDelay czas w ms
   MillisTimer(int countDelay);
 
-  //! inicjalizuje obiekt (opcjonalne)
+  //! Reset timer so it starts counting from 0
   void reset();
-
-  //! sprawdza czy minął czas i funkcja może być wywołana
+  
+  //! Check if the function can be executed, use with if statement
   bool canExecute();
 
-  //! zmienia opóźnienie czasu na bieżąco w ms
+  //! Update delay duration in ms
   void updateDelay(int time);
 
 private:
-  int _countDelay;                 // Czas odliczania w ms
-  unsigned long _previousMillis;   // Ostatni czas wykonania
+  int _countDelay;            
+  unsigned long _previousMillis; 
 };
 
 #endif
