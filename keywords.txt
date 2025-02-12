@@ -1,0 +1,13 @@
+# --------------------------
+# MillisTimer library syntax
+# --------------------------
+
+# Datatypes
+MillisTimer KEYWORD1
+
+# Methods
+canExecute KEYWORD2
+reset KEYWORD2
+updateDelay KEYWORD2
+
+# Constants (LITERAL1)
